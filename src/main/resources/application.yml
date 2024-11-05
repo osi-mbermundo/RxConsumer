@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: RxConsumer
+server:
+  port: 8080
+#logging.level.org.springframework.web.reactive: DEBUG
+#logging.level.reactor.netty: DEBUG
+
+provider:
+  service:
+    rx.url: http://localhost:8081/producer/api/sensors/rx
+    webflux.url: http://localhost:8081/producer/api/sensors/webflux
+    retrofit.url: http://localhost:8081/producer/api/sensors/rx/
